@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             signOut(auth).then(() => {
                 console.log('Sesión cerrada');
-                window.location.href = 'index.html';
+                window.location.href = '../../index.html';
             }).catch((error) => {
                 console.error('Error al cerrar sesión', error);
             });

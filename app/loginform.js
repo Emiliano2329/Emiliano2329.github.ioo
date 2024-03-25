@@ -24,7 +24,7 @@
             localStorage.setItem('userEmail', credentials.user.email); // Guarda el email en localStorage
             localStorage.setItem('userUID', credentials.user.uid);
             // Aquí es donde rediriges al usuario a registros.html
-            window.location.href = "Registros.html"; // Redirigimos al usuario a los registros si es que se logró autentificar
+            window.location.href = "../src/Registros.html"; // Redirigimos al usuario a los registros si es que se logró autentificar
 
             //Si no se autentifica o existen errores lo marcará en pantalla 
         }catch(error){

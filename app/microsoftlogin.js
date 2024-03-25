@@ -26,7 +26,7 @@ microsoftButton.addEventListener('click', async () => {
 
         // Espera 2 segundos antes de redirigir al usuario a la página de registros.
         setTimeout(() => {
-            window.location.href = "Registros.html";
+            window.location.href = "../src/Registros.html";
         }, 2000);
 
         // Registra en la consola el objeto del usuario y la credencial (principalmente para depuración).
@@ -50,7 +50,7 @@ logoutButton.addEventListener('click', () => {
         localStorage.removeItem('userEmail');
         showMensajes("Has cerrado sesión exitosamente.", "success");
         // Redirige al usuario a la página de inicio de sesión.
-        window.location.href = "index.html";
+        window.location.href = "../../index.html";
     }).catch((error) => {
         // Si hay un error en el proceso de cierre de sesión, muestra un mensaje y registra el error en la consola.
         showMensajes("Error al cerrar sesión: " + error.message, "error");
