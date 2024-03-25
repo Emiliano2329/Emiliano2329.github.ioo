@@ -1,0 +1,108 @@
+/* Estilos específicos para el contenedor #contactos y sus elementos internos */
+#contactos {
+    display: flex;
+    width: 80%; /* Ajusta el ancho según necesites */
+    height: 500px; /* Ajusta la altura según necesites */
+    margin: 150px auto; /* Centra el contenedor */
+    border: 2px solid #000; /* Línea alrededor del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que nada se salga del borde redondeado */
+  }
+  
+  #contactos .lado {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 2px solid #000; /* Línea divisoria entre secciones */
+  }
+  
+  /* Eliminar el borde derecho de la última sección dentro de #contactos */
+  #contactos .lado:last-child {
+    border-right: none;
+  }
+  
+  #contactos .registro {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+  }
+  
+  #contactos form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px; /* Espacio dentro del formulario */
+  }
+  
+  #contactos form input[type="text"],
+  #contactos form input[type="email"],
+  #contactos form button {
+    padding: 10px;
+    margin: 5px 0; /* Espacio entre elementos del formulario */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordes redondeados para inputs y botón */
+  }
+  
+  #contactos form button {
+    background-color: #5C6BC0; /* Color de fondo para el botón */
+    color: white;
+    cursor: pointer; 
+    border: none; 
+  }
+  
+  #contactos form button:hover {
+    background-color: #3949AB; /* Color de fondo al pasar el mouse */
+  }
+  
+  #contactos .informacion {
+    padding: 20px;
+    color: #333; /* Color del texto más oscuro para mejor lectura */
+    background-color: #f0f0f0; /* Fondo ligeramente diferente para la información */
+  }
+  
+  /* Asegura una transición suave al cambiar colores dentro de #contactos */
+  #contactos form button, #contactos .lado {
+    transition: background-color 0.3s ease;
+  }
+
+ /* Añade este estilo al final de tu archivo registro.css */
+.navbar-brand i.fa-user {
+  margin-left: 10px; /* Ajusta este valor según necesites */
+}
+
+#logout{
+  margin-left: 1440px;
+}
+
+
+#infoContacto {
+  display: flex; 
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  gap: 20px; 
+}
+
+/* Estilo de cada entrada de contacto */
+.contacto-entry {
+  flex: 0 0 50%; /* Cada contacto ocupa el 50% del ancho del contenedor */
+  box-sizing: border-box; /* Asegúrate de que padding y border se incluyan en el ancho */
+  width: calc(50% - 20px); /* Ajusta el ancho para tener en cuenta el espaciado */
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-width: 300px; /* Define un ancho mínimo para cada contacto si es necesario */
+  height: auto; /* Opcional: para asegurar que la altura se ajuste al contenido */
+}
+
+/* Estilo de los párrafos dentro de las entradas de contacto */
+.contacto-entry p {
+  margin: 0;
+  padding: 5px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+  
